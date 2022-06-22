@@ -1,3 +1,31 @@
+Vengo de aquí:
+https://es.reactjs.org/docs/create-a-new-react-app.html 
+
+# NOTAS
+Created git commit.
+
+Success! Created react-app-00 at C:\Users\catxo\OneDrive\DEV\react_pruebas\react-app-00
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd react-app-00
+  npm start
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
