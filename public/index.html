@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,12 +20,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>( ) COMOVAS.ES</title>
     <!-- 
       Cambiar modo dark, modo normal:
     -->
     <style>
-      body.darkMode {
+      /*body.darkMode {
           --color: #0097fc;
           --color-accent: #0097fc4f;
           --color-bg: #333;
@@ -39,6 +35,20 @@
           --color-secondary-accent: #e20de94f;
           --color-shadow: #33333360;
           --color-table: #0097fc;
+          --color-text: #f7f7f7;
+          --color-text-secondary: #aaa;
+      }*/
+
+      body.darkMode {
+          --color: #ffff00;
+          --color-accent: #ffff0077;
+          --color-bg: #202020;
+          --color-bg-secondary: #333333ff;
+          --color-link: #ffff00;
+          --color-secondary: #61dafb;
+          --color-secondary-accent: #61dafb77;
+          --color-shadow: #00000088;
+          --color-table: #ffff00;
           --color-text: #f7f7f7;
           --color-text-secondary: #aaa;
       }
@@ -59,7 +69,8 @@
   </style>
   </head>
   <body class="darkMode">
-    <noscript>Necesitas activar JavaScript para que esta aplicación funcione...</noscript>
+    <noscript>Necesitas activar JavaScript para que esta aplicación funcione...
+    </noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -71,5 +82,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+ 
+    <!--inicio del invento 2:-->
+    <!--intendo de microservicio: https://martinfowler.com/articles/micro-frontends.html-->
+    <div style="left: 0px; border: 0px none; height: 170px; position: fixed; width: 270px; overflow: hidden; bottom: -70px;">
+      <div style="overflow: hidden;">
+      </div>
+      <iframe id="micro-frontend-container" scrolling="no" style="border-radius: 10px 10px 0px 0px; height: 100px; border: 0px none; width: 165px; margin-bottom: -1px; margin-left: 24px;">
+    </iframe>
+    </div>
+
+    <script type="text/javascript">
+      const microFrontendsByRoute = {
+        '/': 'https://micro.cosasdev.comovas.es/',
+        '/coso': 'https://cosasdev.comovas.es/',
+        '/user-profile': 'https://micro.cosasdev.comovas.es/',
+      };
+
+      const iframe = document.getElementById('micro-frontend-container');
+      iframe.src = microFrontendsByRoute[window.location.pathname];
+    </script>
+    <!--fin del invento2-->
   </body>
+
 </html>

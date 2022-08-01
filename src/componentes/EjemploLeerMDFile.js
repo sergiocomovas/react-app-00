@@ -23,7 +23,7 @@ Me he basado en la documentación obtenida en la siguiente páginas web para obt
         <section className="row">  
             <aside className="col3">
                 <h2><code>DOCUMENTO ORIGINAL</code></h2>
-                Abrir en ventana nueva: <a href="../MD/texto1.md" target="_blank">FORMATO MARKDOWN ARCHIVO TEXTO1.MD  ↗</a>
+                Abrir en ventana nueva: <a href="../MD/texto1.md" target="_blank" rel="noopener noreferrer">FORMATO MARKDOWN ARCHIVO TEXTO1.MD  ↗</a>
             </aside>
             <aside className="col6" style={{backgroundColor:'var(--color-bg-secondary)'}}>
                 <h2><code>DOCUMENTO CODIFICADO MD</code></h2>

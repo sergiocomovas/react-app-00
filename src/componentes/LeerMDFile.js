@@ -18,7 +18,7 @@ export default function LeerMDFile (props){
     fetch(file)
       .then((res) => res.text())
       .then((text) => setContent(text));
-  }, []);
+  }, [file]);
 
   return(
     <ReactMarkdown remarkPlugins={[[remarkGfm, {singleTilde: false}]]} children={content} />

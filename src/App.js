@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import './App.css';
 import Header1 from './componentes/Header1.js';
 import React from 'react';
@@ -22,8 +23,8 @@ function App() {
     <aside>REACT</aside>
     <p>Materializo lo aprendido en mis estudios de creando mi primera página web de pruebas. <br></br>Escrita con cariño y cuidando los detalles. Espero que te guste aunque no sea <i>prefecta*</i> 🥰</p>
     <strong>Vea todo el código de esta web en el repositorio: </strong>
-    <a target='_blank' href='https://github.com/sergiocomovas/react-app-00'><i>GITHUB</i></a>  
-    <a target='_blank' href='https://www.linkedin.com/pulse/abro-mi-propia-web-de-proyectos-react-sergio-r-gonz%25C3%25A1lez'><strong>MÁS INFORMACIÓN ↗️</strong></a>
+    <a target='_blank' rel="noopener noreferrer" href='https://github.com/sergiocomovas/react-app-00'><i>GITHUB</i></a>  
+    <a target='_blank'rel="noopener noreferrer" href='https://www.linkedin.com/pulse/abro-mi-propia-web-de-proyectos-react-sergio-r-gonz%25C3%25A1lez'><strong>MÁS INFORMACIÓN ↗️</strong></a>
     </article>
   </>
 ;
@@ -52,28 +53,28 @@ function App() {
         </main>
         <footer>
           
-          <h1>🙋‍♂️<a href="https://comovas.es" target="_blank">COMOVAS.ES</a></h1>
+          <h1>🙋‍♂️<a href="https://comovas.es" target="_blank" rel="noopener noreferrer">COMOVAS.ES</a></h1>
           <span>
           <aside>
-            <a target="_blank" href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/dec55aab-315c-4567-ae14-f44a8450d532?view=html">
+            <a target="_blank" rel="noopener noreferrer" href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/dec55aab-315c-4567-ae14-f44a8450d532?view=html">
               <img src={logoeuropass} alt="Europass" height='60px' ></img><br></br><br></br>
             </a>
             
-            <a target="_blank" href="https://www.linkedin.com/in/srgrigo/"><img src={logolinkedin} alt="Europass" height='64px' ></img><br></br><br></br>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/srgrigo/"><img src={logolinkedin} alt="Europass" height='64px' ></img><br></br><br></br>
             </a>
             <img src={logodemandante} alt="Europass" height='300px' ></img><br></br><br></br>
           </aside>
           <aside style={{verticalAlign: "text-top"}} > 
             <p><strong>INVÍTAME A UN KO-FI:</strong></p>
-            <a href='https://ko-fi.com/R6R52N4QJ/donate' target='_blank'><img height='36' style={{border:"0px", height:'36px'}} src={imgkofi}border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
+            <a href='https://ko-fi.com/R6R52N4QJ/donate' rel="noopener noreferrer" target='_blank'><img height='36' style={{border:"0px", height:'36px'}} src={imgkofi}border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
             <br></br>
           </aside>
 
           <aside>
             <h4>©️ SERGIO RIGO GONZÁLEZ</h4>
-             <p><a href="https://github.com/sergiocomovas/react-app-00" target="_blank">🐱 GITHUB</a></p>
+             <p><a href="https://github.com/sergiocomovas/react-app-00" target="_blank" rel="noopener noreferrer">🐱 GITHUB</a></p>
             <p><a href="mailto:sergiorigo@yahoo.es">📧 CORREO</a></p>
-            <p><a href="https://web.comovas.es/about/" target="_blank">⚖️ LEGAL</a></p>
+            <p><a href="https://web.comovas.es/about/" target="_blank" rel="noopener noreferrer">⚖️ LEGAL</a></p>
           </aside>
           </span>
           
